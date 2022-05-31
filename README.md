@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://github.com/adebimpecole/single-price-grid-component.git)
 - Live Site URL: [Live site URL](https://genuine-madeleine-924bbd.netlify.app/)
 
 ## My process
