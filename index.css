@@ -1,0 +1,140 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 350px;
+}
+/* part 1 */
+.part1{
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end:   3;
+    padding:  30px 30px 0 40px;
+    border-radius: 10px 10px 0 0;
+}
+h3{
+    color: hsl(179, 62%, 43%);
+    font-size: 20px;
+    margin: 5px 0 20px 0;
+}
+h3 + h4{
+    color: hsl(71, 73%, 54%);
+}
+.part1text{
+    color: hsl(218, 22%, 67%);
+    padding-top: 15px;
+}
+/* part 2 */
+.part2{
+    background-color: hsl(179, 62%, 43%);
+    grid-column-start: 1;
+    grid-column-end:   2;
+    padding: 30px 0 0 40px;
+    color: white;
+    border-radius: 0 0 0 10px;
+}
+h4{
+    margin: 0 0;
+}
+.dlrdiv{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    align-items: center;
+    padding-top: 20px;
+}
+.dlr{
+    font-size: 30px;
+    font-weight: bold;
+}
+button{
+    background-color: hsl(71, 73%, 54%);
+    width: 240px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    margin: 20px 0 0 0;
+    box-shadow: 0 6px 1em #68686882;
+}
+.dlrdiv + div{
+    padding: 10px 0;
+}
+/* part 3 */
+.part3{
+    background-color: hsl(179deg 62% 43% / 71%);
+    grid-column-start: 2;
+    grid-column-end:   3;
+    padding: 30px 30px 0 30px;
+    color: white;
+    border-radius: 0 0 10px 0;
+}
+ul{
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+}
+@media only screen and (max-width: 480px){
+    main{
+        width: 300px;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 300px;
+    }
+    .part1{
+        grid-column-start: 1;
+        grid-column-end:   2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding:  30px;
+        border-radius: 10px 10px 0 0;
+    }
+    .part1text{
+        font-size: 14px;
+    }
+    .part2{
+        grid-column-start: 1;
+        grid-column-end:   2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 30px 30px 20px 30px;
+        border-radius: 0;
+    }
+    .part3{
+        grid-column-start: 1;
+        grid-column-end:   2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        padding: 30px 30px 10px 30px;
+        border-radius: 0 0 10px 10px;
+    }
+    .part3text{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 20px;
+        margin: 20px 0 20px 0;
+    }
+    button{
+        height: 45px;
+    }
+    .dlrtxt{
+        font-size: 14px;
+    }
+    .dlrdiv{
+        column-gap: 20px;
+    }
+    .pt2txt{
+        font-size: 14px;
+    }
+}
